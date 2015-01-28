@@ -1,0 +1,123 @@
+/*!
+ * Pingendo customization for Bootstrap
+ * Homepage: http://pingendo.com
+ * Copyright 2014 Pingendo
+ * Licensed under MIT
+*/
+
+@border-radius-large: @border-radius-base * 1.25;
+@border-radius-small: @border-radius-base * 0.5;
+@navbar-margin-bottom: 0px;
+
+
+/* Google web fonts support */
+@font-family-sans-serif: @gwf-sans-serif;
+@font-family-serif:  @gwf-serif;
+
+@import  url("http://fonts.googleapis.com/css?family=@{gwf-serif}");
+@import  url("http://fonts.googleapis.com/css?family=@{gwf-sans-serif}");
+
+
+/* TODO: webkit need this why ?*/
+html, body{
+	height: 100%;
+}
+
+@text-inverse : contrast(@text-color);
+
+.text-inverse {
+	color: @text-inverse;
+}
+
+/* TODO: verify if we can touch only section */
+.jumbotron  {
+	margin-bottom: 0px !important;
+
+	h1.text-primary {
+		color: @brand-primary !important;
+	}
+
+	h1.text-info {
+		color: @brand-info !important;
+	}
+
+	h1.text-success {
+		color: @brand-success !important;
+	}
+
+	h1.text-warning {
+		color: @brand-warning !important;
+	}
+
+	h1.text-danger {
+		color: @brand-info !important;
+	}
+
+	h1.text-danger {
+		color: @brand-info !important;
+	}
+}
+
+
+// Base sections
+// --------------------------------------------------
+.section {
+
+	background-size: cover;
+
+	> .container > .row {
+		margin : @section-spacing 0px;
+	}
+}	
+
+
+// Alternate sections
+// --------------------------------------------------
+
+.section-primary {
+	background-color: @brand-primary !important;
+  	color: contrast(@brand-primary,  @text-color, @text-inverse, 43%);
+  	.text-inverse {
+      color: contrast(@brand-primary,  @text-inverse, @text-color , 0%);
+    }
+}
+
+.section-info {
+	background-color: @brand-info !important;
+}
+
+.section-success {
+	background-color: @brand-success !important;
+}
+
+.section-warning {
+	background-color: @brand-warning !important;
+}
+
+.section-danger {
+	background-color: @brand-danger !important;
+}
+
+.section-hero {
+	
+	min-height: 100%;
+	> .container  {
+
+      	.navbar {
+		  	background-color: transparent !important;
+	        border: none;
+          	
+	        .navbar-nav li.active a {
+	          background-color: transparent !important;
+	        }
+
+	        a {
+	          color: @text-color; 
+	        }
+
+	        &.navbar-inverse a {
+	          color: @text-inverse;
+	        }
+  		}
+    }
+}
