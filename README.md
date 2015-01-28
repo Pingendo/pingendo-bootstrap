@@ -1,1 +1,4 @@
-# pingendo-bootstrap
+pingendo-bootstrap
+========================
+
+Bootstrap support for Pingendo
