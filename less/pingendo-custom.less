@@ -58,6 +58,11 @@ html, body{
 	}
 }
 
+.carousel .item img {
+  min-width: 100%;
+}
+
+
 
 // Base sections
 // --------------------------------------------------
@@ -98,26 +103,47 @@ html, body{
 	background-color: @brand-danger !important;
 }
 
-.section-hero {
-	
-	min-height: 100%;
-	> .container  {
 
-      	.navbar {
-		  	background-color: transparent !important;
-	        border: none;
-          	
-	        .navbar-nav li.active a {
-	          background-color: transparent !important;
-	        }
 
-	        a {
-	          color: @text-color; 
-	        }
+.cover {	
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	        &.navbar-inverse a {
-	          color: @text-inverse;
-	        }
-  		}
+  overflow:hidden;
+  position:relative;
+  min-height: 100%;
+
+  .navbar {
+    position:absolute;
+    top: 0px;
+    width: 100%;
+    background-color: transparent !important;
+    border: none;
+
+    .navbar-nav li.active a {
+      background-color: transparent !important;
     }
-}
+
+    a {
+      color: @text-color; 
+    }
+
+    &.navbar-inverse a {
+      color: @text-inverse;
+    }
+  }
+
+  .cover-image {
+    z-index:-1;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    &.cover-image-fixed {
+      background-attachment: fixed;
+    }
+  }
+
+} 
