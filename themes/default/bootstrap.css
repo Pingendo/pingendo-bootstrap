@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Lobster");
 @import url("http://fonts.googleapis.com/css?family=Lato");
 /*!
- * Default theme for Pingendo 
+ * Default theme for Pingendo  
  * Homepage: http://pingendo.com  
  * Copyright 2012-2014 Pingendo 
  * Licensed under MIT 
@@ -6581,6 +6581,9 @@ body {
 .jumbotron h1.text-danger {
   color: #5bc0de !important;
 }
+.carousel .item img {
+  min-width: 100%;
+}
 .section {
   background-size: cover;
 }
@@ -6606,20 +6609,39 @@ body {
 .section-danger {
   background-color: #d9534f !important;
 }
-.section-hero {
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
   min-height: 100%;
 }
-.section-hero > .container .navbar {
+.cover .navbar {
+  position: absolute;
+  top: 0px;
+  width: 100%;
   background-color: transparent !important;
   border: none;
 }
-.section-hero > .container .navbar .navbar-nav li.active a {
+.cover .navbar .navbar-nav li.active a {
   background-color: transparent !important;
 }
-.section-hero > .container .navbar a {
+.cover .navbar a {
   color: #000000;
 }
-.section-hero > .container .navbar.navbar-inverse a {
+.cover .navbar.navbar-inverse a {
   color: #ffffff;
+}
+.cover .cover-image {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.cover .cover-image.cover-image-fixed {
+  background-attachment: fixed;
 }
 /* PINGENDO COMMENT DO NOT REMOVE */
