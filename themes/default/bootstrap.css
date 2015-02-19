@@ -6610,8 +6610,8 @@ body {
   background-color: #d9534f !important;
 }
 .cover {
-  padding: 30px 15px;
-  margin-bottom: 30px;
+  padding: 0px 0px;
+  margin-bottom: 0px;
   color: inherit;
   background-color: #eeeeee;
   margin-bottom: 0px !important;
