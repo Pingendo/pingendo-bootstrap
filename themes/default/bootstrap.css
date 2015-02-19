@@ -6610,11 +6610,12 @@ body {
   background-color: #d9534f !important;
 }
 .cover {
-  padding: 0px 0px;
-  margin-bottom: 0px;
+  padding: 30px 15px;
+  margin-bottom: 30px;
   color: inherit;
   background-color: #eeeeee;
   margin-bottom: 0px !important;
+  padding: 0px 0px;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -6673,6 +6674,16 @@ body {
 }
 .cover h1.text-danger {
   color: #5bc0de !important;
+}
+@media screen and (min-width: 768px) {
+  .cover {
+    padding: 0px;
+  }
+  .container .cover,
+  .container-fluid .cover {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 .cover .navbar {
   position: absolute;
