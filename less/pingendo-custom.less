@@ -110,6 +110,16 @@ html, body{
   padding: 0px 0px;
   background-color: transparent;
   
+  @media screen and (min-width: @screen-sm-min) {
+    padding: 0px;
+
+    .container &,
+    .container-fluid & {
+      padding-left:  0px;
+      padding-right: 0px;
+    }
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
