@@ -1,9 +1,9 @@
 @import url("http://fonts.googleapis.com/css?family=Lobster");
 @import url("http://fonts.googleapis.com/css?family=Lato");
 /*!
- * Default theme for Pingendo  
+ * Default theme for Pingendo 
  * Homepage: http://pingendo.com  
- * Copyright 2012-2014 Pingendo 
+ * Copyright 2015 Pingendo 
  * Licensed under MIT 
  * Based on Bootstrap v3.3.2
 */
@@ -6610,12 +6610,69 @@ body {
   background-color: #d9534f !important;
 }
 .cover {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  margin-bottom: 0px !important;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   position: relative;
   min-height: 100%;
+}
+.cover h1,
+.cover .h1 {
+  color: inherit;
+}
+.cover p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.cover > hr {
+  border-top-color: #d5d5d5;
+}
+.container .cover,
+.container-fluid .cover {
+  border-radius: 5px;
+}
+.cover .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cover {
+    padding: 48px 0;
+  }
+  .container .cover,
+  .container-fluid .cover {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .cover h1,
+  .cover .h1 {
+    font-size: 63px;
+  }
+}
+.cover h1.text-primary {
+  color: #337cbb !important;
+}
+.cover h1.text-info {
+  color: #5bc0de !important;
+}
+.cover h1.text-success {
+  color: #5cb85c !important;
+}
+.cover h1.text-warning {
+  color: #f0ad4e !important;
+}
+.cover h1.text-danger {
+  color: #5bc0de !important;
+}
+.cover h1.text-danger {
+  color: #5bc0de !important;
 }
 .cover .navbar {
   position: absolute;
