@@ -1,7 +1,7 @@
 /*!
  * Pingendo customization for Bootstrap
  * Homepage: http://pingendo.com
- * Copyright 2015 Pingendo
+ * Copyright 2014 Pingendo
  * Licensed under MIT
 */
 
@@ -29,18 +29,6 @@ html, body{
 	color: @text-inverse;
 }
 
-.icon-xs { 
-  font-size:8px;
-}
-
-.icon-sm {
- font-size:32px;
-}
-
-.icon-lg{
-  font-size:64px;
-}
-
 /* TODO: verify if we can touch only section */
 .jumbotron  {
 	margin-bottom: 0px !important;
@@ -48,6 +36,10 @@ html, body{
 	h1.text-primary {
 		color: @brand-primary !important;
 	}
+
+  h1.text-inverse {
+    color: @text-inverse !important;
+  }
 
 	h1.text-info {
 		color: @brand-info !important;
@@ -69,6 +61,11 @@ html, body{
 		color: @brand-info !important;
 	}
 }
+
+.carousel .item img {
+  min-width: 100%;
+}
+
 
 
 // Base sections
@@ -110,27 +107,62 @@ html, body{
 	background-color: @brand-danger !important;
 }
 
-.section-hero {
-	
-	min-height: 100%;
-	> .container  {
 
-      	.navbar {
-		  	background-color: transparent !important;
-	        border: none;
-          	
-	        .navbar-nav li.active a {
-	          background-color: transparent !important;
-	        }
 
-	        a {
-	          color: @text-color; 
-	        }
+.cover {	
+  .jumbotron();
 
-	        &.navbar-inverse a {
-	          color: @text-inverse;
-	        }
-  		}
+  padding: 0px 0px;
+  background-color: transparent;
+  
+  @media screen and (min-width: @screen-sm-min) {
+    padding: 0px;
+
+    .container &,
+    .container-fluid & {
+      padding-left:  0px;
+      padding-right: 0px;
     }
-}
+  }
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow:hidden;
+  position:relative;
+  min-height: 100%;
+
+  .navbar {
+    position:absolute;
+    top: 0px;
+    width: 100%;
+    background-color: transparent !important;
+    border: none;
+
+    .navbar-nav li.active a {
+      background-color: transparent !important;
+    }
+
+    a {
+      color: @text-color; 
+    }
+
+    &.navbar-inverse a {
+      color: @text-inverse;
+    }
+  }
+
+  .cover-image {
+    z-index:-1;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    &.cover-image-fixed {
+      background-attachment: fixed;
+    }
+  }
+
+} 

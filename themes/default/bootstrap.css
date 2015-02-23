@@ -3,7 +3,7 @@
 /*!
  * Default theme for Pingendo 
  * Homepage: http://pingendo.com  
- * Copyright 2012-2014 Pingendo 
+ * Copyright 2015 Pingendo 
  * Licensed under MIT 
  * Based on Bootstrap v3.3.2
 */
@@ -6581,6 +6581,9 @@ body {
 .jumbotron h1.text-danger {
   color: #5bc0de !important;
 }
+.carousel .item img {
+  min-width: 100%;
+}
 .section {
   background-size: cover;
 }
@@ -6606,20 +6609,107 @@ body {
 .section-danger {
   background-color: #d9534f !important;
 }
-.section-hero {
+.cover {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  margin-bottom: 0px !important;
+  padding: 0px 0px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
   min-height: 100%;
 }
-.section-hero > .container .navbar {
+.cover h1,
+.cover .h1 {
+  color: inherit;
+}
+.cover p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.cover > hr {
+  border-top-color: #d5d5d5;
+}
+.container .cover,
+.container-fluid .cover {
+  border-radius: 5px;
+}
+.cover .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cover {
+    padding: 48px 0;
+  }
+  .container .cover,
+  .container-fluid .cover {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .cover h1,
+  .cover .h1 {
+    font-size: 63px;
+  }
+}
+.cover h1.text-primary {
+  color: #337cbb !important;
+}
+.cover h1.text-info {
+  color: #5bc0de !important;
+}
+.cover h1.text-success {
+  color: #5cb85c !important;
+}
+.cover h1.text-warning {
+  color: #f0ad4e !important;
+}
+.cover h1.text-danger {
+  color: #5bc0de !important;
+}
+.cover h1.text-danger {
+  color: #5bc0de !important;
+}
+@media screen and (min-width: 768px) {
+  .cover {
+    padding: 0px;
+  }
+  .container .cover,
+  .container-fluid .cover {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.cover .navbar {
+  position: absolute;
+  top: 0px;
+  width: 100%;
   background-color: transparent !important;
   border: none;
 }
-.section-hero > .container .navbar .navbar-nav li.active a {
+.cover .navbar .navbar-nav li.active a {
   background-color: transparent !important;
 }
-.section-hero > .container .navbar a {
+.cover .navbar a {
   color: #000000;
 }
-.section-hero > .container .navbar.navbar-inverse a {
+.cover .navbar.navbar-inverse a {
   color: #ffffff;
+}
+.cover .cover-image {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.cover .cover-image.cover-image-fixed {
+  background-attachment: fixed;
 }
 /* PINGENDO COMMENT DO NOT REMOVE */
