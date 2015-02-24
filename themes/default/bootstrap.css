@@ -6556,6 +6556,15 @@ html,
 body {
   height: 100%;
 }
+.icon-xs {
+  font-size: 8px;
+}
+.icon-sm {
+  font-size: 32px;
+}
+.icon-lg {
+  font-size: 64px;
+}
 .text-inverse {
   color: #ffffff;
 }
@@ -6565,6 +6574,9 @@ body {
 }
 .jumbotron h1.text-primary {
   color: #337cbb !important;
+}
+.jumbotron h1.text-inverse {
+  color: #ffffff !important;
 }
 .jumbotron h1.text-info {
   color: #5bc0de !important;
@@ -6659,6 +6671,9 @@ body {
 }
 .cover h1.text-primary {
   color: #337cbb !important;
+}
+.cover h1.text-inverse {
+  color: #ffffff !important;
 }
 .cover h1.text-info {
   color: #5bc0de !important;
