@@ -6704,17 +6704,31 @@ body {
   position: absolute;
   top: 0px;
   width: 100%;
-  background-color: transparent !important;
   border: none;
+  background-color: transparent !important;
 }
 .cover .navbar .navbar-nav li.active a {
   background-color: transparent !important;
 }
-.cover .navbar a {
-  color: #000000;
+.cover .navbar .navbar-toggle {
+  border-color: transparent;
 }
-.cover .navbar.navbar-inverse a {
-  color: #ffffff;
+.cover .navbar .navbar-toggle:hover,
+.cover .navbar .navbar-toggle:focus {
+  background-color: transparent;
+}
+.cover .navbar .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+.cover .navbar.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+}
+.cover .navbar.navbar-inverse .navbar-toggle:hover,
+.cover .navbar.navbar-inverse .navbar-toggle:focus {
+  background-color: transparent;
+}
+.cover .navbar.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ffffff;
 }
 .cover .cover-image {
   z-index: -1;
