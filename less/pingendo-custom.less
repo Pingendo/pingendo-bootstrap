@@ -150,16 +150,23 @@ html, body{
     width: 100%;
     border: none;
     background-color: transparent !important;
-    
+
     .navbar-nav li.active a {
       background-color: transparent !important;
     }
-
-    .navbar-toggle span, a {
+    .navbar-toggle span {
+      background-color: @text-color;
+    }
+  
+    &.navbar-inverse .navbar-toggle span {
+      background-color: @text-inverse;
+    }
+    
+    a {
       color: @text-color; 
     }
 
-    &.navbar-inverse .navbar-toggle span, &.navbar-inverse a {
+    &.navbar-inverse a {
       color: @text-inverse;
     }
   }
