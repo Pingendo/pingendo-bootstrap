@@ -148,18 +148,18 @@ html, body{
     position:absolute;
     top: 0px;
     width: 100%;
-    background-color: transparent !important;
     border: none;
-
+    background-color: transparent !important;
+    
     .navbar-nav li.active a {
       background-color: transparent !important;
     }
 
-    a {
+    .navbar-toggle span, a {
       color: @text-color; 
     }
 
-    &.navbar-inverse a {
+    &.navbar-inverse .navbar-toggle span, &.navbar-inverse a {
       color: @text-inverse;
     }
   }
