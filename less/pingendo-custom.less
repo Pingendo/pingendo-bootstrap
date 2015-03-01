@@ -20,7 +20,7 @@
 
 /* TODO: webkit need this why ?*/
 html, body{
-	height: 100%;
+  height: 100%;
 }
 
 .icon-xs { 
@@ -37,40 +37,40 @@ html, body{
 @text-inverse : contrast(@text-color);
 
 .text-inverse {
-	color: @text-inverse;
+  color: @text-inverse;
 }
 
 /* TODO: verify if we can touch only section */
 .jumbotron  {
-	margin-bottom: 0px !important;
+  margin-bottom: 0px !important;
 
-	h1.text-primary {
-		color: @brand-primary !important;
-	}
+  h1.text-primary {
+    color: @brand-primary !important;
+  }
 
   h1.text-inverse {
     color: @text-inverse !important;
   }
 
-	h1.text-info {
-		color: @brand-info !important;
-	}
+  h1.text-info {
+    color: @brand-info !important;
+  }
 
-	h1.text-success {
-		color: @brand-success !important;
-	}
+  h1.text-success {
+    color: @brand-success !important;
+  }
 
-	h1.text-warning {
-		color: @brand-warning !important;
-	}
+  h1.text-warning {
+    color: @brand-warning !important;
+  }
 
-	h1.text-danger {
-		color: @brand-info !important;
-	}
+  h1.text-danger {
+    color: @brand-info !important;
+  }
 
-	h1.text-danger {
-		color: @brand-info !important;
-	}
+  h1.text-danger {
+    color: @brand-info !important;
+  }
 }
 
 .carousel .item img {
@@ -83,44 +83,44 @@ html, body{
 // --------------------------------------------------
 .section {
 
-	background-size: cover;
+  background-size: cover;
 
-	> .container > .row {
-		margin : @section-spacing 0px;
-	}
-}	
+  > .container > .row {
+    margin : @section-spacing 0px;
+  }
+} 
 
 
 // Alternate sections
 // --------------------------------------------------
 
 .section-primary {
-	background-color: @brand-primary !important;
-  	color: contrast(@brand-primary,  @text-color, @text-inverse, 43%);
-  	.text-inverse {
+  background-color: @brand-primary !important;
+    color: contrast(@brand-primary,  @text-color, @text-inverse, 43%);
+    .text-inverse {
       color: contrast(@brand-primary,  @text-inverse, @text-color , 0%);
     }
 }
 
 .section-info {
-	background-color: @brand-info !important;
+  background-color: @brand-info !important;
 }
 
 .section-success {
-	background-color: @brand-success !important;
+  background-color: @brand-success !important;
 }
 
 .section-warning {
-	background-color: @brand-warning !important;
+  background-color: @brand-warning !important;
 }
 
 .section-danger {
-	background-color: @brand-danger !important;
+  background-color: @brand-danger !important;
 }
 
 
 
-.cover {	
+.cover {  
   .jumbotron();
 
   padding: 0px 0px;
@@ -154,20 +154,33 @@ html, body{
     .navbar-nav li.active a {
       background-color: transparent !important;
     }
-    .navbar-toggle span {
-      background-color: @text-color;
-    }
-  
-    &.navbar-inverse .navbar-toggle span {
-      background-color: @text-inverse;
-    }
-    
-    a {
-      color: @text-color; 
+
+    // Navbar toggle
+    //
+    // Custom button for toggling the `.navbar-collapse`, powered by the collapse
+    // JavaScript plugin.
+
+    .navbar-toggle {
+      border-color: transparent;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+      .icon-bar {
+        background-color: @text-color;
+      }
     }
 
-    &.navbar-inverse a {
-      color: @text-inverse;
+
+    &.navbar-inverse .navbar-toggle {
+      border-color: transparent;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+      .icon-bar {
+        background-color: @text-inverse;
+      }
     }
   }
 
