@@ -6704,11 +6704,17 @@ body {
   position: absolute;
   top: 0px;
   width: 100%;
-  background-color: transparent !important;
   border: none;
+  background-color: transparent !important;
 }
 .cover .navbar .navbar-nav li.active a {
   background-color: transparent !important;
+}
+.cover .navbar .navbar-toggle span {
+  background-color: #000000;
+}
+.cover .navbar.navbar-inverse .navbar-toggle span {
+  background-color: #ffffff;
 }
 .cover .navbar a {
   color: #000000;
