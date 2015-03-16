@@ -62,7 +62,7 @@
 @font-family-serif : Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace : Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base : @font-family-sans-serif;
+@font-family-base : Lato;
 
 @font-size-base : 14px;
 @font-size-large : ceil((@font-size-base * 1.25)); // ~18px
@@ -81,7 +81,7 @@
 @line-height-computed : floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family : @font-family-sans-serif;
+@headings-font-family : Lato;
 @headings-font-weight : 500;
 @headings-line-height : 1.1;
 @headings-color : inherit;
@@ -871,8 +871,6 @@
 
 // Pingendo variables
 @section-spacing : 35px;
-@gwf-serif : 'Lobster';
-@gwf-sans-serif : 'Lato';
 
 // Core variables and mixins
 @import "https://raw.githubusercontent.com/twbs/bootstrap/v3.3.2/less/mixins.less";
