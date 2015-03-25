@@ -65,10 +65,22 @@ html, body{
 // --------------------------------------------------
 .section {
 
-  background-size: cover;
-
+  position:relative;
   > .container > .row {
     margin : @section-spacing 0px;
+  }
+
+  .background-image {
+    z-index:-1;
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    &.background-image-fixed {
+      background-attachment: fixed;
+    }
   }
 } 
 
@@ -178,7 +190,7 @@ html, body{
     height:100%;
     background-size: cover;
     background-position: center;
-    &.cover-image-fixed {
+    &.background-image-fixed, &.cover-image-fixed {
       background-attachment: fixed;
     }
   }
