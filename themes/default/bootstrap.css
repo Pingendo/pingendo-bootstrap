@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Lato|Lato");
+@import url("https://fonts.googleapis.com/css?family=Lato|Lato");
 /*!
  * Default theme for Pingendo 
  * Homepage: http://pingendo.com  
@@ -6556,15 +6556,6 @@ html,
 body {
   height: 100%;
 }
-.icon-xs {
-  font-size: 8px;
-}
-.icon-sm {
-  font-size: 32px;
-}
-.icon-lg {
-  font-size: 64px;
-}
 .text-inverse {
   color: #ffffff;
 }
@@ -6594,10 +6585,22 @@ body {
   min-width: 100%;
 }
 .section {
-  background-size: cover;
+  position: relative;
 }
 .section > .container > .row {
   margin: 35px 0px;
+}
+.section .background-image {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.section .background-image.background-image-fixed {
+  background-attachment: fixed;
 }
 .section-primary {
   background-color: #337cbb !important;
@@ -6626,9 +6629,12 @@ body {
   margin-bottom: 0px !important;
   padding: 0px 0px;
   background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
   position: relative;
   min-height: 100%;
@@ -6733,6 +6739,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+.cover .cover-image.background-image-fixed,
 .cover .cover-image.cover-image-fixed {
   background-attachment: fixed;
 }
