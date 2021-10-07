@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  
+</head>
+
+<body>
+  <style>
+    body {
+      margin: 10px;
+    }
+
+    body>* {
+      margin-bottom: 25px !important;
+      left: 5% !important;
+      max-width: 90% !important;
+      overflow: visible;
+      transition: all 0.5 ease-in;
+    }
+
+    .row {
+      width: 100%;
+    }
+
+    /* .pi-draggable:hover {
+      box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    } */
+    .pi-draggable * {
+      pointer-events: none !important;
+    }
+
+    .pi-draggable {
+      pointer-events: all !important;
+      position: relative;
+      cursor: -webkit-grab !important;
+      cursor: -moz-grab !important;
+      cursor: grab !important;
+    }
+
+    .pi-draggable:active {
+      cursor: -webkit-grabbing !important;
+      cursor: -moz-grabbing !important;
+      cursor: grabbing !important;
+    }
+
+    .pi-draggable>.col-md-12 {
+      width: 100%;
+      float: left
+    }
+
+    .pi-draggable>.col-md-8 {
+      width: 66.6%;
+      float: left
+    }
+
+    .pi-draggable>.col-md-6 {
+      width: 50%;
+      float: left
+    }
+
+    .pi-draggable>.col-md-4 {
+      width: 33.3%;
+      float: left
+    }
+
+    .pi-draggable>.col-md-3 {
+      width: 25%;
+      float: left
+    }
+
+    .pi-draggable>.col-md-2 {
+      width: 16.6%;
+      float: left
+    }
+
+    [class*=col-]:empty:after {
+      content: "Col" !important;
+    }
+
+    [class*=col-]:empty {
+      background-color: rgba(0, 0, 0, .1) !important;
+      border: 2px solid white;
+    }
+  </style>
+  <br>
+
+  <div class="alert alert-primary pi-draggable alert-dismissible fade show" role="alert" >
+    <button type="button" class="btn-close" data-bs-dismiss="alert"> </button>
+    <h4 class="alert-heading">Well done!</h4>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+  </div>
+
+  <div class="progress pi-draggable" draggable="true">
+    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%">50%</div>
+  </div>
+
+  <!-- <div class="modal pi-draggable" draggable="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="sections.js" style=""></script>
+</body>
+
+</html>

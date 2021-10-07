@@ -1,0 +1,26 @@
+- sections:
+    - "/sections/covers.html"
+- snippets:
+  - "/components/buttons.html"
+  - "/components/grid.html"
+  - "/components/text.html"
+  - "/components/buttons.html"
+  - "/components/media.html"
+  - "/components/navs.html"
+  - "/components/lists.html"
+  - "/components/cards.html"
+  - "/components/others.html"
+- themes :
+  - "/theme/"
+- fields : 
+  - base : "element.yaml"  
+  # - myclass:
+  #     label : "My class"
+  #     type: select
+  #     attribute: "class"
+  #     options : ["myclass1","myclass2"]
+  # - myattr:
+  #     label : "My attribute"
+  #     type: text
+  #     attribute: ''
+  #     custom : "my_field.js"
