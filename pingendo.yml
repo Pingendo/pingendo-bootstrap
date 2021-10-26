@@ -18,7 +18,7 @@
     type: select
     attribute: "class"
     options : ["myclass1","myclass2"]
-  - label : "My attribute2"
+  - label : "My attribute"
     type: text
     attribute: "myAttr"
     # custom : "my_field.js"
