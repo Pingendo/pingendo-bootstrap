@@ -14,13 +14,11 @@
   - "/theme/"
 - fields : 
   # - base : "element.yaml"  
-  - myclass:
-      label : "My class"
-      type: select
-      attribute: "class"
-      options : ["myclass1","myclass2"]
-  - myattr:
-      label : "My attribute"
-      type: text
-      attribute: ''
-      custom : "my_field.js"
+  - label : "My class"
+    type: select
+    attribute: "class"
+    options : ["myclass1","myclass2"]
+  - label : "My attribute"
+    type: text
+    attribute: ''
+    custom : "my_field.js"
