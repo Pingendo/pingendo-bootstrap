@@ -20,5 +20,6 @@
     options : ["myclass1","myclass2"]
   - label : "My attribute"
     type: text
-    attribute: ''
-    custom : "my_field.js"
+    attribute: 'myAttr'
+    # custom : "my_field.js"
+      
