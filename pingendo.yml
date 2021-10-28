@@ -1,7 +1,7 @@
 - sections:
     - label: 'Covers'
       url: "/sections/covers.html"
-- snippets:
+- snippets: #tab,form not yet supported
     - label: 'Buttons'
       url: "/components/buttons.html"
     - label: 'Grid'
