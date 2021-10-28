@@ -1,24 +1,32 @@
 - sections:
-    - "/sections/covers.html"
+    - label: 'Covers'
+      url: "/components/cover.html"
 - snippets:
-  - "/components/buttons.html"
-  - "/components/grid.html"
-  - "/components/text.html"
-  - "/components/buttons.html"
-  - "/components/media.html"
-  - "/components/navs.html"
-  - "/components/lists.html"
-  - "/components/cards.html"
-  - "/components/others.html"
-- themes :
-  - "/theme/"
-- fields : 
-  # - base : "element.yaml"  
-  - label : "My class"
-    type: select
-    attribute: "class"
-    options : ["myclass1","myclass2"]
-  - label : "My attribute"
-    type: text
-    attribute: ''
-    custom : "my_field.js"
+    - label: 'Buttons'
+      url: "/components/buttons.html"
+    - label: 'Grid'
+      url: "/components/grid.html"
+    - label: 'Text'
+      url: "/components/text.html"
+    - label: 'Media'
+      url: "/components/media.html"
+    - label: 'Navs'
+      url: "/components/navs.html"
+    - label: 'Lists'
+      url: "/components/lists.html"
+    - label: 'Cards'
+      url: "/components/cards.html"
+    - label: 'Others'
+      url: "/components/others.html"
+- themes:
+    - '/theme/'
+- fields:
+    # - base : "element.yaml"
+    - label: 'My class'
+      type: select
+      attribute: 'class'
+      options: ['myclass1', 'myclass2']
+    - label: 'My attribute'
+      type: text
+      attribute: 'myAttr'
+      # custom : "my_field.js"
