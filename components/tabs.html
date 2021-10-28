@@ -1,132 +1,206 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <base href="http://localhost:8000/" target="_blank" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <base href="http://localhost:8000/" target="_blank">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-</head>
+  <body>
+    <style>
+      body {
+        margin: 20px;
+      }
 
-<body>
-  <style> body {
-      margin: 20px;
-    }
+      body > * {
+        margin-bottom: 25px !important;
+        overflow: visible;
+        transition: all 0.5;
+      }
 
-    body>* {
-      margin-bottom: 25px !important;
-      overflow: visible;
-      transition: all 0.5;
-    }
+      .h-100,
+      .h-75 {
+        min-height: 50% !important;
+        max-height: 50% !important;
+      }
 
-    .h-100,
-    .h-75 {
-      min-height: 50% !important;
-      max-height: 50% !important;
-    }
+      .pi-draggable * {
+        pointer-events: none !important;
+      }
 
-    .pi-draggable * {
-      pointer-events: none !important;
-    }
+      .pi-draggable {
+        pointer-events: all !important;
+        position: relative;
+        cursor: -webkit-grab !important;
+        cursor: -moz-grab !important;
+        cursor: grab !important;
+      }
 
-    .pi-draggable {
-      pointer-events: all !important;
-      position: relative;
-      cursor: -webkit-grab !important;
-      cursor: -moz-grab !important;
-      cursor: grab !important;
-    }
+      .pi-draggable:active {
+        cursor: -webkit-grabbing !important;
+        cursor: -moz-grabbing !important;
+        cursor: grabbing !important;
+      }
+    </style>
 
-    .pi-draggable:active {
-      cursor: -webkit-grabbing !important;
-      cursor: -moz-grabbing !important;
-      cursor: grabbing !important;
-    } 
-   
-  </style>
-
-  <div class="pi-wrapper pi-draggable" draggable="true">
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a href="" class="active nav-link" data-toggle="pill" data-target="#tabone">Tab 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="" data-toggle="pill" data-target="#tabtwo">Tab 2</a>
-      </li>
-      <li class="nav-item">
-        <a href="" class="nav-link" data-toggle="pill" data-target="#tabthree">Tab 3</a>
-      </li>
-    </ul>
-
-    <div class="tab-content mt-2">
-      <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-        <p class="">Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-        <p class="">Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="tab-pane fade" id="tabthree" role="tabpanel">
-        <p class="">Tab pane three. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="pi-wrapper pi-draggable" draggable="true">
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a href="" class="active nav-link" data-toggle="tab" data-target="#tabone">Tab 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="" data-toggle="tab" data-target="#tabtwo">Tab 2</a>
-      </li>
-      <li class="nav-item">
-        <a href="" class="nav-link" data-toggle="tab" data-target="#tabthree">Tab 3</a>
-      </li>
-    </ul>
-    <div class="tab-content mt-2">
-      <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-        <p class="">Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-        <p class="">Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="tab-pane fade" id="tabthree" role="tabpanel">
-        <p class="">Tab pane three. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row pi-draggable" draggable="true">
-    <div class="col-4">
-      <ul class="nav nav-pills flex-column">
+    <div class="pi-wrapper pi-draggable" draggable="true">
+      <ul class="nav nav-pills">
         <li class="nav-item">
-          <a href="" class="active nav-link" data-toggle="pill" data-target="#tabone">Tab 1</a>
+          <a
+            href=""
+            class="active nav-link"
+            data-toggle="pill"
+            data-target="#tabone"
+            >Tab 1</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="" data-toggle="pill" data-target="#tabtwo">Tab 2</a>
+          <a class="nav-link" href="" data-toggle="pill" data-target="#tabtwo"
+            >Tab 2</a
+          >
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link" data-toggle="pill" data-target="#tabthree">Tab 3</a>
+          <a href="" class="nav-link" data-toggle="pill" data-target="#tabthree"
+            >Tab 3</a
+          >
         </li>
       </ul>
-    </div>
-    <div class="col-8">
-      <div class="tab-content">
+
+      <div class="tab-content mt-2">
         <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-          <p class="">Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="">
+            Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+          </p>
         </div>
         <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-          <p class="">Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="">
+            Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+          </p>
         </div>
         <div class="tab-pane fade" id="tabthree" role="tabpanel">
-          <p class="">Tab pane three. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="">
+            Tab pane three. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <script src="sections.js"></script>
-</body>
 
+    <div class="pi-wrapper pi-draggable" draggable="true">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a
+            href=""
+            class="active nav-link"
+            data-toggle="tab"
+            data-target="#tabone"
+            >Tab 1</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" data-toggle="tab" data-target="#tabtwo"
+            >Tab 2</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link" data-toggle="tab" data-target="#tabthree"
+            >Tab 3</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content mt-2">
+        <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+          <p class="">
+            Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="tabtwo" role="tabpanel">
+          <p class="">
+            Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="tabthree" role="tabpanel">
+          <p class="">
+            Tab pane three. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pi-draggable" draggable="true">
+      <div class="col-4">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a
+              href=""
+              class="active nav-link"
+              data-toggle="pill"
+              data-target="#tabone"
+              >Tab 1</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="" data-toggle="pill" data-target="#tabtwo"
+              >Tab 2</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href=""
+              class="nav-link"
+              data-toggle="pill"
+              data-target="#tabthree"
+              >Tab 3</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-8">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+            <p class="">
+              Tab pane one. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="tabtwo" role="tabpanel">
+            <p class="">
+              Tab pane two. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="tabthree" role="tabpanel">
+            <p class="">
+              Tab pane three. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="sections.js"></script>
+  </body>
 </html>
