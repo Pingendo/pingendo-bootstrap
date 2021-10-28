@@ -1,6 +1,6 @@
 - sections:
     - label: 'Covers'
-      url: "/components/sections.html"
+      url: "/components/cover.html"
 - snippets:
     - label: 'Buttons'
       url: "/components/buttons.html"
