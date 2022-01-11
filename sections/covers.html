@@ -13,6 +13,46 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <style>
+      body {
+        margin: 10px;
+      }
+
+      body > * {
+        margin-bottom: 25px !important;
+        left: 5% !important;
+        max-width: 90% !important;
+        overflow: visible;
+        transition: all 0.5 ease-in;
+      }
+
+      /* .pi-draggable:hover {
+      transform: translateY(-2px);
+    } */
+
+      /* .pi-draggable * {
+        pointer-events: none !important;
+      }
+      */
+
+      .pi-draggable {
+        pointer-events: all !important;
+        position: relative;
+        cursor: -webkit-grab !important;
+        cursor: -moz-grab !important;
+        cursor: grab !important;
+      } 
+
+      .pi-draggable:active {
+        cursor: -webkit-grabbing !important;
+        cursor: -moz-grabbing !important;
+        cursor: grabbing !important;
+      }
+
+
+    </style>
+    
   </head>
 
   <body>
