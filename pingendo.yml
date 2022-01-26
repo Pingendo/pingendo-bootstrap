@@ -4,5 +4,27 @@
 - themes:
     - '/theme/'
 - elements:  
-    - .card
     - .btn
+    - .spinner-
+    - .fas
+    - .fab
+    - .card
+    - .form-
+    - form
+    - .row
+    - .col
+    - .container
+    - .alert
+    - .toast
+    - .list
+    - .img
+    - .nav
+    - .pagination
+    - .page
+    - .breadcrumb
+    - .tab
+    - .lead
+    - .badge
+    - .display
+    - .blockquote
+    - .table
