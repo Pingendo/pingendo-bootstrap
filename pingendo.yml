@@ -1,32 +1,8 @@
-- sections:
-    - label: 'Covers'
-      url: "/sections/covers.html"
 - snippets: #tab,form not yet supported
     - label: 'Buttons'
       url: "/components/all.html"
-    # - label: 'Grid'
-    #   url: "/components/grid.html"
-    # - label: 'Text'
-    #   url: "/components/text.html"
-    # - label: 'Media'
-    #   url: "/components/media.html"
-    # - label: 'Navs'
-    #   url: "/components/navs.html"
-    # - label: 'Lists'
-    #   url: "/components/lists.html"
-    # - label: 'Cards'
-    #   url: "/components/cards.html"
-    # - label: 'Others'
-    #   url: "/components/others.html"
 - themes:
     - '/theme/'
-- fields:
-    # - base : "element.yaml"
-    - label: 'My class'
-      type: select
-      attribute: 'class'
-      options: ['myclass1', 'myclass2']
-    - label: 'My attribute'
-      type: text
-      attribute: 'myAttr'
-      # custom : "my_field.js"
+- elements:  
+    - .card
+    - .btn
