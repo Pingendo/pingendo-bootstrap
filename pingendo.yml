@@ -32,4 +32,5 @@
     - .blockquote
     - .table
     - .nav
+    - .navbar-nav
     - .nav-item
