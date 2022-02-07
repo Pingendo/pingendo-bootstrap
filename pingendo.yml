@@ -9,6 +9,7 @@
     - .fas
     - .fab
     - .card
+    - .card-header
     - .form-
     - form
     - .row
@@ -35,5 +36,4 @@
     - .navbar-nav
     - .nav-item
     - .py-5 
-    - div
-    
+
