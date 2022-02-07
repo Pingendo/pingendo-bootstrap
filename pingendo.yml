@@ -10,6 +10,7 @@
     - '*[class*="col-"]'
     - .card-body
 - selectors:  
+    - body
     - .col
     - .btn
     - .fas
