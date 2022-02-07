@@ -31,4 +31,5 @@
     - .display-4
     - .blockquote
     - .table
+    - .nav
     - .nav-item
