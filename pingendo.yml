@@ -7,6 +7,7 @@
 
 - containers:
     - .col
+    - *[class*="col-"]
     - .card-body
 - elements:  
     - .btn
