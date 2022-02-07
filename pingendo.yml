@@ -25,6 +25,9 @@
     - .tab
     - .lead
     - .badge
-    - .display-
+    - .display-1
+    - .display-2
+    - .display-3
+    - .display-4
     - .blockquote
     - .table
