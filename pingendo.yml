@@ -9,7 +9,7 @@
     - .col
     - '*[class*="col-"]'
     - .card-body
-- elements:  
+- selectors:  
     - .btn
     - .fas
     - .fab
