@@ -3,14 +3,17 @@
       url: "/components/all.html"
 - themes:
     - '/theme/'
+
+
+- containers:
+    - .col
+    - .card-body
 - elements:  
     - .btn
-    - .spinner-
     - .fas
     - .fab
     - .card
     - .card-header
-    - .form-
     - form
     - .row
     - .col
