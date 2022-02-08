@@ -13,9 +13,9 @@
     - body
     - form
     - label
+    - input
     - a
-    - .pi-element
-    - .col
+    - .col-md-6
     - .btn
     - .fas
     - .fab
@@ -53,6 +53,5 @@
     - h4
     - h5
     - h6
-    - input
     
 
