@@ -43,6 +43,7 @@
     - .navbar-nav
     - .nav-item
     - .py-5 
+    - .label
     - p
     - h1
     - h2
