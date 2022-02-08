@@ -13,6 +13,7 @@
     - body
     - form
     - label
+    - a
     - .col
     - .btn
     - .fas
