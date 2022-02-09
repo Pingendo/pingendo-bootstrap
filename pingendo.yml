@@ -1,57 +1,54 @@
-- snippets: #tab,form not yet supported
-    - label: 'Buttons'
-      url: "/components/all.html"
-- themes:
-    - '/theme/'
-
-
-- containers:
-    - .col
-    - '*[class*="col-"]'
-    - .card-body
-- selectors:  
-    - body
-    - form
-    - label
-    - input
-    - a
-    - .col-md-6
-    - .btn
-    - .fas
-    - .fab
-    - .card
-    - .card-header
-    - form
-    - .row
-    - .col
-    - .container
-    - .alert
-    - .toast
-    - .list
-    - .img
-    - .nav
-    - .pagination
-    - .page
-    - .breadcrumb
-    - .tab
-    - .lead
-    - .badge
-    - .display-1
-    - .display-2
-    - .display-3
-    - .display-4
-    - .blockquote
-    - .table
-    - .nav
-    - .navbar-nav
-    - .nav-item
-    - .py-5 
-    - p
-    - h1
-    - h2
-    - h3
-    - h4
-    - h5
-    - h6
-    
-
+containers: 
+  - .col
+  - "*[class*=\"col-\"]"
+  - .card-body
+selectors: 
+  - body
+  - form
+  - label
+  - input
+  - a
+  - .col-md-6
+  - .btn
+  - .fas
+  - .fab
+  - .card
+  - .card-header
+  - form
+  - .row
+  - .col
+  - .container
+  - .alert
+  - .toast
+  - .list
+  - .img
+  - .nav
+  - .pagination
+  - .page
+  - .breadcrumb
+  - .tab
+  - .lead
+  - .badge
+  - .display-1
+  - .display-2
+  - .display-3
+  - .display-4
+  - .blockquote
+  - .table
+  - .nav
+  - .navbar-nav
+  - .nav-item
+  - .py-5
+  - p
+  - h1
+  - h2
+  - h3
+  - h4
+  - h5
+  - h6
+snippets: 
+  - 
+    label: Buttons
+    url: /components/all.html
+themes: 
+  - /theme/
