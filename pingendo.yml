@@ -3,8 +3,6 @@
       url: "/components/all.html"
 - themes:
     - '/theme/'
-
-
 - containers:
     - .col
     - '*[class*="col-"]'
@@ -53,5 +51,3 @@
     - h4
     - h5
     - h6
-    
-
