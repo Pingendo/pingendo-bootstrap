@@ -48,7 +48,7 @@ selectors:
   - h6
 snippets: 
   - 
-    label: Buttons
-    url: /components/all.html
+    label: Bootstrap components
+    file: /components/all.html
 themes: 
   - /theme/

@@ -15,20 +15,8 @@
                 ********** 
                 ********** 
         COL   -->
-  <div class="py-5 text-center text-white h-100 align-items-center d-flex pi-element" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
-    <div class="container py-5">
-      <div class="row">
-        <div class="mx-auto col-lg-8 col-md-10">
-          <h1 class="display-3 mb-4">A wonderful serenity</h1>
-          <p class="lead mb-5"> Has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence. </p>
-          <a href="#" class="btn btn-lg btn-primary mx-1">Take me there</a>
-          <a class="btn btn-lg mx-1 btn-outline-primary" href="#">Let's Go</a>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="row">
-    <div class="col">
+    <div class="col" style="">
       <p class="display-1">Display 1</p>
       <p class="display-2">Display 2</p>
       <p class="display-3">Display 3</p>
@@ -46,7 +34,7 @@
       <p class="h6">Example heading <span class="badge bg-dark">New</span></p>
       
       -->
-      <p class="h1">Heading 1 <span class="badge bg-primary">New</span></p>
+      <p class="h1" style="">Heading 1 <span class="badge bg-primary">New</span></p>
       <p class="h2">Heading 2</p>
       <p class="h3">Heading 3</p>
       <p class="h4">Heading 4</p>
@@ -83,6 +71,71 @@
         <li class="list-inline-item">And another one.</li>
         <li class="list-inline-item">But they're displayed inline.</li>
       </ul>
+    </div>
+    <!-- Card -->
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" alt="..." src="https://static.pingendo.com/img-placeholder-1.svg">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header"> Featured </div>
+          <img src="https://static.pingendo.com/img-placeholder-1.svg" class="card-img-top" alt="..." style="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+          <div class="card-footer text-muted"> 2 days ago </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <form class="mt-2">
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Username" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Password" aria-label="Last name">
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-primary" style="">Sign in</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col">
+        <form class="mt-2">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Username</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label"> Password</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary" style="">Sign in</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
   <!---sa -->
