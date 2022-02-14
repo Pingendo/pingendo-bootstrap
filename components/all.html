@@ -15,6 +15,13 @@
                 ********** 
                 ********** 
         COL   -->
+  <div class="container">
+    <div class="row">
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+    </div>
+  </div>
   <div class="row">
     <div class="col" style="">
       <p class="display-1">Display 1</p>
@@ -34,7 +41,8 @@
       <p class="h6">Example heading <span class="badge bg-dark">New</span></p>
       
       -->
-      <p class="h1" style="">Heading 1 <span class="badge bg-primary">New</span></p>
+      <p class="h1" style=""> Heading 1 <span class="badge bg-primary">New</span>
+      </p>
       <p class="h2">Heading 2</p>
       <p class="h3">Heading 3</p>
       <p class="h4">Heading 4</p>
@@ -43,22 +51,29 @@
       <p class="lead"> This is a lead paragraph. It stands out from regular paragraphs. </p>
       <p>Simple p</p>
       <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-      <p><del>This line of text is meant to be treated as deleted text.</del></p>
-      <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+      <p>
+        <del>This line of text is meant to be treated as deleted text.</del>
+      </p>
+      <p>
+        <ins>This line of text is meant to be treated as an addition to the document.</ins>
+      </p>
       <p><u>This line of text will render as underlined.</u></p>
-      <p><small>This line of text is meant to be treated as fine print.</small></p>
+      <p>
+        <small>This line of text is meant to be treated as fine print.</small>
+      </p>
       <p><strong>This line rendered as bold text.</strong></p>
       <p><em>This line rendered as italicized text.</em></p>
       <blockquote class="blockquote">
         <p>A well-known quote, contained in a blockquote element.</p>
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <footer class="blockquote-footer"> Someone famous in <cite title="Source Title">Source Title</cite>
+        </footer>
       </blockquote>
       <ul class="list-unstyled">
         <li>This is a list.</li>
         <li>It appears completely unstyled.</li>
         <li>Structurally, it's still a list.</li>
         <li>However, this style only applies to immediate child elements.</li>
-        <li>Nested lists: <ul>
+        <li> Nested lists: <ul>
             <li>are unaffected by this style</li>
             <li>will still show a bullet</li>
             <li>and have appropriate left margin</li>
@@ -72,37 +87,36 @@
         <li class="list-inline-item">But they're displayed inline.</li>
       </ul>
     </div>
-    <!-- Card -->
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" alt="..." src="https://static.pingendo.com/img-placeholder-1.svg">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+  </div>
+  <!-- Card -->
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <img class="card-img-top" alt="..." src="https://static.pingendo.com/img-placeholder-1.svg">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-header"> Featured </div>
-          <img src="https://static.pingendo.com/img-placeholder-1.svg" class="card-img-top" alt="..." style="">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-          <div class="card-footer text-muted"> 2 days ago </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-header">Featured</div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text"> Some quick example text to build on the card title and make up the bulk of the card's content. </p>
         </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+        <div class="card-footer text-muted">2 days ago</div>
       </div>
     </div>
   </div>
@@ -117,7 +131,7 @@
             <input type="text" class="form-control" placeholder="Password" aria-label="Last name">
           </div>
           <div class="col">
-            <button type="submit" class="btn btn-primary" style="">Sign in</button>
+            <button type="submit" class="btn btn-primary" style=""> Sign in </button>
           </div>
         </div>
       </form>
@@ -133,7 +147,7 @@
           <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
         </div>
         <div class="mb-3">
-          <button type="submit" class="btn btn-primary" style="">Sign in</button>
+          <button type="submit" class="btn btn-primary" style=""> Sign in </button>
         </div>
       </form>
     </div>
