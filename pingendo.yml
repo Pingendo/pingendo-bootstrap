@@ -49,6 +49,6 @@ selectors:
 snippets: 
   - 
     label: Buttons
-    url: /components/all.html
+    path: /components/all.html
 themes: 
   - /theme/
