@@ -46,7 +46,83 @@ selectors:
   - h4
   - h5
   - h6
-snippets: 
+
+classes:
+  - .m
+
+utilityPrefix :
+  - align-content
+  - align-items
+  - align-self
+  - align
+  - bg-opacity
+  - bg
+  - border-bottom
+  - border-color  
+  - border-end
+  - border-start
+  - border-top
+  - border-width
+  - border border-danger 
+  - bottom
+  - d
+  - display
+  - end
+  - flex-direction
+  - flex-grow
+  - flex-shrink
+  - flex-wrap 
+  - flex
+  - float
+  - font 
+  - fs 
+  - fst 
+  - fw
+  - gap
+  - h
+  - justify-content
+  - lh
+  - mb
+  - me
+  - ms
+  - mt
+  - mx
+  - my
+  - mh 
+  - mw 
+  - min-vh 
+  - min-vw
+  - opacity 
+  - order 
+  - overflow
+  - p- 
+  - pb- 
+  - pe- 
+  - ps- 
+  - pt- 
+  - px- 
+  - py-
+  - position-
+  - rounded- 
+  - rounded-bottom - 
+  - rounded-end - 
+  - rounded-start 
+  - rounded-top
+  - shadow
+  - start
+  - text-align 
+  - text-decoration 
+  - text-opacity 
+  - text-transform 
+  - text  
+  - top
+  - translate-middle
+  - user-select
+  - vh
+  - vw
+  - visibility
+
+components: 
   - 
     label: Bootstrap components
     file: /components/all.html

@@ -1,0 +1,63 @@
+ utilityPrefix = [
+    "align-content",
+    "align-items",
+    "align-self",
+    "align",
+    "bg-opacity",
+    "bg",
+    "border-bottom",
+    "border-color", // non ho classi con questo prefix, bs ha border-danger 
+    "border-end",
+    "border-start",
+    "border-top",
+    "border-width",
+    "border border-danger", // @problema - tante che puntano a border, vedi anche text
+    "bottom",
+    "d",
+    "display",
+    "end",
+    "flex-direction", "flex-grow", "flex-shrink", "flex-wrap", "flex",
+    "float",
+    "font", "fs", "fst", "fw",
+    "gap",
+    "h",
+    "justify-content",
+    "lh",
+    "mb",
+    "me",
+    "ms",
+    "mt",
+    "mx",
+    "my",
+    "mh", "mw", "min-vh", "min-vw",
+    //"negative-margin", "negative-margin-bottom", "negative-margin-end", "negative-margin-start", "negative-margin-top", "negative-margin-x", "negative-margin-y", 
+    "opacity", "order", "overflow",
+    // {label:"pointer events", prefixes},
+    "p-", "pb-", "pe-", "ps-", "pt-", "px-", "py-",
+    // https://getbootstrap.com/docs/5.0/utilities/interactions/#pointer-events
+    // "pointer-events": (
+    //   property: pointer-events,
+    //   class: pe,
+    //   values: none auto,
+    // ),
+    "position-",
+    "rounded-", "rounded-bottom", "rounded-end", "rounded-start", "rounded-top",
+    "shadow",
+    "start",
+    "text-align", "text-decoration", "text-opacity", "text-transform", "text",  // @problema - simile al border, non ho un classa text / text-color-danger ho text-danger
+    "top",
+    "translate-middle",
+    "user-select",
+    "vh",
+    "vw",
+    "visibility",
+    // ["visible", "invisible"]
+    // <div class="visible">...</div>
+    // <div class="invisible">...</div>
+    // .visible {
+    //   visibility: visible !important;
+    // }
+    // .invisible {
+    //   visibility: hidden !important;
+    // }
+  ];
