@@ -103,6 +103,7 @@ utilityPrefix :
   - px- 
   - py-
   - position-
+  - row
   - rounded- 
   - rounded-bottom - 
   - rounded-end - 
